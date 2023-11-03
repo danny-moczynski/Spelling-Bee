@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script src="startmeup.js"></script>
+  <div class="container">
+    <h1>Spelling Bee</h1>
+    <!-- Need to put a span in the score, so the text "Score: " stays the same, but the information inside the span changes from the javascript -->
+    <p id="score">Score: <span id="score-value">0</span></p> 
+    <input type="text" id="text-display" readonly>
+    <div class="game">
+      <div class="game-info">
+        <p id="game-name"></p>
+      </div>
+      <div class="grid" id="grid">
+
+        <button class="peripheral cell first-letter"></button>
+        <button class="peripheral cell second-letter"></button>
+        <button class="peripheral cell third-letter"></button>
+        <button class="peripheral cell fourth-letter"></button>
+        <button class="peripheral cell fifth-letter"></button>
+        <button class="peripheral cell sixth-letter"></button>
+        <button class="cell yellow"></button>
+        <button class="cell delete-letter">X</button>
+        <button class="cell shuffle-letters">♲</button>
+        <button class="cell check-word">✅</button>
+
+      </div>
+      <div class="word-list">
+        <h2>Your Words...</h2>
+        <ol id="your-words-list">
+        </ol>
+      </div>
+
+    </div>
+  </div>
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>

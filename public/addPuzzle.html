@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Puzzle</title>
+   <link href="addPuzzle.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <h1>Add a New Puzzle</h1>
+  <form action="/addPuzzle" method="post">
+    <label for="centralLetter">Central Letter:</label>
+    <input type="text" id="centralLetter" name="centralLetter" required><br>
+
+    <label for="peripheralLetters">Peripheral Letters (comma-separated):</label>
+    <input type="text" id="peripheralLetters" name="peripheralLetters" required><br>
+
+    <label for="acceptableWords">Acceptable Words (comma-separated):</label>
+    <input type="text" id="acceptableWords" name="acceptableWords" required><br>
+
+    <button type="submit">Add Puzzle</button>
+  </form>
+</body>
+</html>

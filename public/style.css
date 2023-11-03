@@ -1,0 +1,142 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans Mt';
+  display: flex; /* Center the content vertically and horizontally */
+  align-items: center;
+  justify-content: center;
+  margin: 0; /* Remove default margin */
+  height: 100vh; /* Make the body fill the viewport height */
+}
+
+.container {
+  /* Remove margin and padding to center the content within the body */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center elements horizontally */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.game {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Make the game container 100% width of the container */
+}
+
+.game-info {
+  width: 25%;
+  text-align: center;
+}
+
+.word-list {
+  padding: 40px;
+  justify-content: flex-end
+}
+
+#score {
+  text-align: center;
+}
+
+#text-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 10px;
+  text-align: center;
+}
+
+/* Add your styles to position buttons in a grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Set up 3 columns with the same width */
+  text-align: center;
+  grid-gap: 0;
+  border: 1px ridge #0815d4;
+  padding: 0px;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  font-size: 16px;
+  background-color: #f0f0f0;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+.cell.yellow {
+  background-color: yellow;
+}
+
+.cell.yellow:hover {
+  background-color: #d1c000;
+}
+
+.cell:hover {
+  background-color: #ddd;
+}
+
+.cell.first-letter { /* L **/
+  grid-row: 2/4;
+  grid-column: 1/2;
+}
+
+.cell.second-letter { /* B **/
+  grid-row: 1/3;
+  grid-column: 2/3;
+}
+
+.cell.third-letter { /* R **/
+  grid-row: 2/4;
+  grid-column: 3/4;
+}
+
+.cell.fourth-letter { /* O **/
+  grid-row: 4/6;
+  grid-column: 1/2;
+}
+
+.cell.yellow { /* N **/
+  grid-row: 3/5;
+  grid-column: 2/3;
+}
+
+.cell.fifth-letter { /* M **/
+  grid-row: 5/7;
+  grid-column: 2/3;
+}
+
+.cell.sixth-letter { /* A **/
+  grid-row: 4/6;
+  grid-column: 3/4;
+}
+
+.cell.delete-letter {
+  grid-row: 7/9;
+  grid-column: 1/2;
+}
+
+.cell.shuffle-letters {
+  grid-row: 7/9;
+  grid-column: 2/3;
+}
+
+.cell.check-word {
+  grid-row: 7/9;
+  grid-column: 3/4;
+}
